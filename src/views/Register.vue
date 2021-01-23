@@ -3,7 +3,7 @@
     <div class="card">
       <div class="card-title">
         <div class="card-content">
-          <form>
+          <form @submit.prevent="createUsuario({email : email , password : pass})">
             <div>
               <label for="email">Correo Electronico</label>
               <input 
@@ -39,6 +39,8 @@
 
 
 <script>
+import {mapActions} from 'vuex'
+
 export default {
     name: "Register",
     data() {
@@ -47,7 +49,9 @@ export default {
         pass : '',
         pass2: ''
       }
-      
+    },
+    methods: {
+      ...mapActions(['createUsuario'])
     }
 }
 </script>
