@@ -33,9 +33,15 @@
               id="new-password"
               placeholder="Ingrese de nuevo su contraseña">
             </div>
-            <button type="submit" class="btn btn-dark btn-block my-3">Registrar</button>
+            <button 
+            type="submit" 
+            :disabled="!desactivar"
+            class="btn btn-dark btn-block my-3">Registrar</button>
              <router-link to="/">
-               <button type="submit" class="btn btn-primary btn-block my-3">Tengo cuenta</button>
+               <button 
+               type="submit" 
+               
+               class="btn btn-primary btn-block my-3">Tengo cuenta</button>
              </router-link> 
           
             
@@ -64,7 +70,10 @@ export default {
       ...mapActions(['createUsuario'])
     },
     computed: {
-      ...mapState(['error'])
+      ...mapState(['error']),
+        desactivar(){
+            return this.pass === this.pass2 && this.pass.trim() !== ''
+        }
     }
 }
 </script>
