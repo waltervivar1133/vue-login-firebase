@@ -13,7 +13,11 @@
   - Validacion de Errores
   - Deslogueo
   - Responsive Desing
+# Funcionalidad
 
+  - En la vista de Register se creara una cuenta con correo y con contraseña minina de 6 digitos
+  - Si tuviese cuenta registrada en la url principal se pogra loguear con dicha cuenta.
+  - Al ingresar podra ver la pantalla de Inicio , la cual no podra acceder si no esta logueado.
 # Despliegue 
 
   - Hecha en Vercel 
