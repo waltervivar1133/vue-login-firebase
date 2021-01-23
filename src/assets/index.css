@@ -1,15 +1,30 @@
 @import "normalize.css";
 
-.container{
+.bg-dark{
+  background-color: black;
+}
+.text-white{
+  color: WHITE;
+}
+
+.container-center{
   display: flex;
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
 .card{
   width: 500px;
-  height: auto;
-  display: flex;
-} 
+}
+
+.background-register{
+  background-color: #DCD9D4;
+ background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+ background-blend-mode: soft-light,screen;
+}
+
+.background-login{
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+}
