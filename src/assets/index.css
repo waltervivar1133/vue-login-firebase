@@ -28,3 +28,24 @@
 .background-login{
   background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
 }
+
+.images{
+  width: 100%;
+  height: auto;
+  background-image: url('../assets/images/04.jpg');
+  opacity: 0.9;
+  background-size: cover;
+}
+.overlay{
+  position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    background-color: #212529;
+    opacity: 0.5;
+}
+.contenido-parrafos p{
+  font-size: 20px;
+  font-family: 'Lora', 'Times New Roman', serif;
+}
