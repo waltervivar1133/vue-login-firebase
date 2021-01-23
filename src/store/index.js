@@ -39,11 +39,11 @@ export default new Vuex.Store({
       auth.signInWithEmailAndPassword(usuario.email, usuario.password)
       .then(res => {
           console.log(res)
-          const usuarioLoguead = () =>{
+          const usuarioLogueado = () =>{
             email: res.user.email
             uid : res.user.uid
           }
-          commit('setUsuario',usuarioLoguead)
+          commit('setUsuario',usuarioLogueado)
           router.push('/inicio')
 
       })
@@ -51,8 +51,28 @@ export default new Vuex.Store({
         console.log(error)
         commit('setError', error)
       })
+    },
+    cerrarSesion({commit}){
+      auth.signOut()
+        .then(() => {
+          router.push('/  ')
+        })
+    },
+    detectarUsuario({commit}, usuario){
+      commit('setUsuario', usuario)
     }
   },
+  getters:{
+    existeUsuario(state){
+      if(state.usuario === null){
+        return router.push('/')
+
+      }else{
+        return true
+      }
+    }
+  },
+  
   modules: {
   }
 })
