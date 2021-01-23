@@ -32,6 +32,7 @@
           
             
           </form>
+            <div class="alert alert-danger" v-if="error">{{error}}</div>
         </div>
  
     </div>

@@ -1,19 +1,15 @@
-# login-vue
+# login-vue con Bootstrap
 
-## Project setup
-```
-yarn install
-```
+  - Descargue el proyecto 
+  - Ejecutas Yarn install o Npm install
+  - finalmente Yarn dev o Npm run dev
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+# Caracteristicas del proyecto
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+  - Login con Registro y Acceso
+  - Se implemento firebase para la autenticacion, asi como para guardar los usuarios
+  - Rutas protegidas
+  - Se utilizo Bootstrap 
+  - Validacion de Errores
+  - Deslogueo
+  - Responsive Desing
