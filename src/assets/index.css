@@ -1,0 +1,15 @@
+@import "normalize.css";
+
+.container{
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  width: 500px;
+  height: auto;
+  display: flex;
+} 
