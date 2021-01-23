@@ -55,7 +55,7 @@ export default new Vuex.Store({
     cerrarSesion({commit}){
       auth.signOut()
         .then(() => {
-          router.push('/  ')
+          router.push('/')
         })
     },
     detectarUsuario({commit}, usuario){

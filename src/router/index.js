@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Register from '../views/Register.vue'
 import Login from '../views/Login.vue'
 import Inicio from '../views/Inicio.vue'
-
+import NotFound from '../views/NotFound.vue'
 
 Vue.use(VueRouter)
 
@@ -22,7 +22,16 @@ const routes = [
     path: '/inicio',
     name: 'Inicio',
     component: Inicio
-  }
+  },
+  { 
+    path: '/404',
+    component: NotFound
+   },  
+  {  
+    path: '*', 
+    redirect: '/404'
+  }, 
+
 
 ]
 
