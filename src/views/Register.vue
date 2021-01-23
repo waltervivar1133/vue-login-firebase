@@ -25,7 +25,7 @@
               placeholder="Ingrese contraseña">
             </div>
             <div>
-              <label for="new-password" class="form-label">Contraseña</label>
+              <label for="new-password" class="form-label">Repita Contraseña</label>
               <input 
               type="password"
               class="form-control"

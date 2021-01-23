@@ -13,3 +13,8 @@
   - Validacion de Errores
   - Deslogueo
   - Responsive Desing
+
+# Despliegue 
+
+  - Hecha en Vercel 
+  - link : https://vue-login-firebase.vercel.app/
